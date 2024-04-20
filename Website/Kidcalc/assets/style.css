@@ -1,0 +1,111 @@
+
+html
+{
+    height: 100%;
+    width: 100%;
+    BORDER-RIGHT: 0px solid; 
+    BORDER-TOP: 0px solid; 
+    BORDER-LEFT: 0px solid; 
+    BORDER-BOTTOM: 0px solid; 
+    PADDING-TOP: 0px;
+    PADDING-RIGHT: 0px; 
+    PADDING-LEFT: 0px; 
+    PADDING-BOTTOM: 17px; 
+    MARGIN: 0px auto;
+    DISPLAY: block;
+    POSITION: relative; 
+    TOP: 0px; 
+    color: #FFFDE7;
+    text-shadow: 1px 1px 0 black;
+    font-size: 100%; 
+}
+body{
+    font-family: sans-serif;
+    background: url(../images/background3.jpg) repeat;
+    min-height: 100%;
+    background-color: #333534;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 
+    "login"
+    "calculator"
+    "info"
+}
+
+.header{
+    font-family: Verdana;
+    padding-top: 1em;
+    grid-area: header;
+    display: flex;
+    font-weight: bold;
+    color: #fff3e7;
+    font-size: 2.4em;
+    justify-content: center;
+    text-shadow: 3px 3px 0 black;
+}
+h1 {
+    font-size: 1.5 em;
+    color: #ffcd62; 
+}
+.name{
+    font-size: 1.5 em;
+    color: #ffcd62; 
+
+}
+.calculator {
+    width: 18em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.buttons button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="text"] {
+    width: 20em;
+    height: 2em;
+    padding: 0px; 
+    border: 2px solid #000000;
+ 
+  }
+  input[type="age"] {
+    width: 3em;
+    height: 2em;
+    padding: 0px; 
+    border: 2px solid #000000;
+ 
+  }
+
+input[type="number"] {
+    width: 20em;
+    height: 3em;
+    padding: 0px; 
+    border: 2px solid #000000;
+ 
+  }
+  @media (max-width: 768px) { 
+    body { 
+      font-size: 75%; 
+    }
+  }
+  @media (max-width: 390px) { 
+    body { 
+      font-size: 50%; 
+    }
+  }

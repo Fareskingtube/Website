@@ -1,0 +1,163 @@
+html
+{
+    height: 100%;
+    width: 100%;
+    BORDER-RIGHT: 0px solid; 
+    BORDER-TOP: 0px solid; 
+    BORDER-LEFT: 0px solid; 
+    BORDER-BOTTOM: 0px solid; 
+    PADDING-TOP: 0px;
+    PADDING-RIGHT: 0px; 
+    PADDING-LEFT: 0px; 
+    PADDING-BOTTOM: 17px; 
+    MARGIN: 0px auto;
+    DISPLAY: block;
+    POSITION: relative; 
+    TOP: 0px; 
+    color: #FFFDE7;
+    text-shadow: 1px 1px 0 black;
+    font-size: 100%; 
+}
+nav ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block; 
+    margin-right: 3em; 
+}
+nav a {
+    color: #fff3e7;
+}
+body{
+    display: grid;
+    grid-gap: 0.1em;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "post"
+    "footer";
+}
+
+.posts{
+    background: url(../images/background.png);
+    background-color: #332937;
+    background-size: contain;
+    margin: 1em;
+    display: grid;
+    border: 0.4em solid #E0D6F0;
+    border-radius: 1em;
+    grid-area: post;
+    grid-gap: 0.1em;
+    grid-template-areas: 
+    "post1"
+    "post2"
+    "post3"
+    "post4"
+    "post5"
+    "post6";
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.post{
+    text-decoration: none;
+    display: flex;
+    color: #FFFDE7;
+    margin: 30px;
+    font-size: 1.5em;
+    border: 0.4em solid #FDE7D9;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    flex-direction: column;
+    font-size: 1em;
+    aspect-ratio: 4 / 2;
+}
+#post1{
+    grid-area: post1;
+    background: url(../images/trimming-cat-nail.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#post2{
+    grid-area: post2;
+    background: url(../images/rassianbluecat.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#post3{
+    grid-area: post3;
+    background: url(../images/Cat-eating.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#post4{
+    grid-area: post4;
+    background: url(../images/Cat-fur.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#post5{
+    grid-area: post5;
+    background: url(../images/Cat-drinking.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#post6{
+    grid-area: post6;
+    background: url(../images/Eyes.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.header{
+    font-family: Verdana;
+    padding-top: 1em;
+    grid-area: header;
+    display: flex;
+    font-weight: bold;
+    color: #fff3e7;
+    font-size: 2.4em;
+    justify-content: center;
+    text-shadow: 3px 3px 0 black;
+}
+h1 {
+    font-size: 1.5 em;
+    color: #ffcd62; 
+}
+.footer{
+    color: #FFFDE7;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: self-end;
+    grid-area: footer;
+    PADDING-BOTTOM: 2em; 
+    text-align: center;
+}
+.des{
+    font-size: 0.1rm;
+}
+
+  @media (max-width: 768px) { 
+    .posts {
+        margin: 0 auto;
+        border: 0.3em solid;
+        grid-gap: 0.75em;
+      }
+  
+    body { 
+      font-size: 75%; 
+    }
+  }
+  @media (max-width: 390px) { 
+    .posts {
+        margin: 0 auto;
+        border: 0.2em solid;
+        grid-gap: 0.01em;
+      }
+      body { 
+      font-size: 50%; 
+    }
+  }

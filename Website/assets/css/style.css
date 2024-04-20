@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+}
+.title{
+    text-align: center;
+}
+body{
+    background: url(../images/background.png);
+    min-height: 100%;
+    background-color: #2F2F2F;
+}
